@@ -1362,4 +1362,5 @@ PRODUCT_PACKAGES += \
     FingerprintExtensionService \
     PowerOffAlarm \
     TimeService \
-    chargeonlymode
+    chargeonlymode \
+	libplatformconfig
