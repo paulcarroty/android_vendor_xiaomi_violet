@@ -52,13 +52,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/violet/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/violet/proprietary/lib/com.quicinc.cne.server@1.0.so:system/lib/com.quicinc.cne.server@1.0.so \
-    vendor/xiaomi/violet/proprietary/lib/fm_helium.so:system/lib/fm_helium.so \
+    vendor/xiaomi/violet/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_VENDOR)/lib/fm_helium.so \
     vendor/xiaomi/violet/proprietary/lib/libchromaflash.so:system/lib/libchromaflash.so \
     vendor/xiaomi/violet/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
     vendor/xiaomi/violet/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
     vendor/xiaomi/violet/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
     vendor/xiaomi/violet/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
-    vendor/xiaomi/violet/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
+    vendor/xiaomi/violet/proprietary/lib/libfm-hci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfm-hci.so \
     vendor/xiaomi/violet/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/xiaomi/violet/proprietary/lib/vendor.qti.esepowermanager@1.0.so:system/lib/vendor.qti.esepowermanager@1.0.so \
     vendor/xiaomi/violet/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
@@ -71,7 +71,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/violet/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/violet/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/lib64/com.quicinc.cne.server@1.0.so \
-    vendor/xiaomi/violet/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
+    vendor/xiaomi/violet/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_VENDOR)/lib64/fm_helium.so \
     vendor/xiaomi/violet/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/xiaomi/violet/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/xiaomi/violet/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
     vendor/xiaomi/violet/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
     vendor/xiaomi/violet/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
-    vendor/xiaomi/violet/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
+    vendor/xiaomi/violet/proprietary/lib64/libfm-hci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfm-hci.so \
     vendor/xiaomi/violet/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/xiaomi/violet/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/xiaomi/violet/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
@@ -1299,6 +1299,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
+    fm-bridge \
     libantradio \
     libsdm-disp-apis \
     vendor.qti.hardware.fm@1.0 \
