@@ -1314,3 +1314,17 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne.server@2.2 \
     com.quicinc.cne.server@2.3 \
     chargeonlymode
+
+# The following are components normally built in LineageOS as part of the
+# device tree; but since we are used the Halium tree, these were excluded and
+# we must include them manually:
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.0-service \
+    android.hardware.media.omx@1.0-service \
+    libcld80211 \
+    libreference-ril \
+    libril \
+    audio.primary.default \
+    local_time.default \
+    power.default \
+    vibrator.default
